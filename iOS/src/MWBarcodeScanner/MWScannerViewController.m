@@ -786,7 +786,6 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 - (void)stopScanning {
 	if (self.state == CAMERA_DECODING) {
 		self.state = CANCELLING;
-		return;
 	}
 	
 	[self revertToNormal];
